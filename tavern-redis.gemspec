@@ -19,4 +19,5 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'redis'
   gem.add_dependency 'redis-namespace'
   gem.add_dependency 'tavern'
+  gem.add_dependency 'multi_json'
 end
