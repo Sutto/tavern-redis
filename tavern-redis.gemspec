@@ -4,8 +4,8 @@ require File.expand_path('../lib/tavern/redis/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Darcy Laycock"]
   gem.email         = ["sutto@sutto.net"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Implements a Redis-based hub for Redis.}
+  gem.summary       = %q{Tavern + Redis == Distributed Pub Sub}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($\)
