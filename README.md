@@ -21,15 +21,15 @@ Or install it yourself as:
 
 Inside your application, simple set your hub to a `Tavern::Redis::Hub` instance:
 
-@@@ruby
+```ruby
 Tavern.hub = Tavern::Redis::Hub.new Redis.new
-@@@
+```
 
 Next, in a script where you want the subscribers to work, run:
 
-@@@ruby
+```ruby
 Tavern.hub.start
-@@@
+```
 
 Whilst using the hub as normal in your main application
 
