@@ -1,6 +1,7 @@
-# Tavern::Redis
+# tavern-redis
 
-TODO: Write a gem description
+Tavern Redis lets you publish and receive tavern messages over redis. Useful for situations where
+you want to implement simple pubsub with ruby-like semantics over a network. Magic!
 
 ## Installation
 
@@ -18,7 +19,19 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Inside your application, simple set your hub to a `Tavern::Redis::Hub` instance:
+
+@@@ruby
+Tavern.hub = Tavern::Redis::Hub.new Redis.new
+@@@
+
+Next, in a script where you want the subscribers to work, run:
+
+@@@ruby
+Tavern.hub.start
+@@@
+
+Whilst using the hub as normal in your main application
 
 ## Contributing
 
