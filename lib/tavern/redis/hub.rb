@@ -6,7 +6,7 @@ module Tavern
 
       attr_reader :redis
 
-      def initialize(redis)
+      def initialize(redis = Redis.current)
         @redis = redis
         super()
       end
